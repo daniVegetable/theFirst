@@ -4,6 +4,6 @@ def get_value(key: str, newPswd) -> str:
             if key+":" in line:
                 result = line.split(":")[1].replace("\n", "")
                 newPas = line.replace(line.split(":")[1].replace("\n", ""), newPswd)
-                file.writelines(newPas)
+                #file.writelines(newPas)
 
 get_value("pop", "2345")
